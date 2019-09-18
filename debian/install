@@ -1,0 +1,3 @@
+.build/							usr/src/kituraproj
+terraform/scripts/install.sh	usr/src/kituraproj
+terraform/scripts/start.sh		usr/src/kituraproj
