@@ -37,7 +37,7 @@ extension App {
     }
 
     func create(_ user: User, completion: @escaping (User?, RequestError?) -> Void) {
-        let newUser = User(name: user.name)
+        let newUser = User(name: user.name, image: user.image)
         guard let userId = newUser.id else {
             completion(nil, .badRequest)
             return

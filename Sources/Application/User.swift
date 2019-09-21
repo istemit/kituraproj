@@ -11,9 +11,11 @@ struct User: Codable {
 
     var id: String?
     let name: String
+    let image: Data
 
-    init(id: String = UUID().uuidString, name: String) {
+    init(id: String = UUID().uuidString, name: String, image: Data) {
         self.id = id
         self.name = name
+        self.image = image
     }
 }
